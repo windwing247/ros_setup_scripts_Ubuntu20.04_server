@@ -49,3 +49,10 @@ echo '* $ source ~/.bashrc          *'
 echo '* after that, try             *'
 echo '* $ LANG=C roscore            *'
 echo '*******************************'
+
+sudo apt install tree
+sudo apt install wireless-tools
+sudo apt install ros-noetic-cv-bridge
+sudo apt install ros-noetic-cv-camera
+sudo apt install ros-noetic-image-transport-plugins
+sudo 
