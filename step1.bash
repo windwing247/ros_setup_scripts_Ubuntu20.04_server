@@ -56,3 +56,18 @@ sudo apt install ros-noetic-cv-bridge -y
 sudo apt install ros-noetic-cv-camera -y
 sudo apt install ros-noetic-image-transport-plugins -y
 sudo apt install ros-noetic-web-video-server -y
+
+git clone https://github.com/rt-net/RaspberryPiMouse.git
+cd RaspberryPiMouse/utils
+sudo apt install linux-headers-$(uname -r) build-essential
+./build_install.bash
+cd ~
+sudo sed -i -e "39i dtparam=i2c_baudrate=62500" /boot/firmware/config.txt
+git clone https://github.com/Shogo4402/pimouse_setup.git
+sudo crontab ./pimouse_setup/setup.bash
+
+
+
+
+
+git clone https://github.com/Shogo4402/pimouse_setup.git
