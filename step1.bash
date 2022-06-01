@@ -65,9 +65,3 @@ cd ~
 sudo sed -i -e "39i dtparam=i2c_baudrate=62500" /boot/firmware/config.txt
 git clone https://github.com/Shogo4402/pimouse_setup.git
 sudo crontab ./pimouse_setup/setup.bash
-
-
-
-
-
-git clone https://github.com/Shogo4402/pimouse_setup.git
