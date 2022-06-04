@@ -56,7 +56,7 @@ sudo apt install ros-noetic-cv-bridge -y
 sudo apt install ros-noetic-cv-camera -y
 sudo apt install ros-noetic-image-transport-plugins -y
 sudo apt install ros-noetic-web-video-server -y
-
+cd ~
 git clone https://github.com/rt-net/RaspberryPiMouse.git
 cd RaspberryPiMouse/utils
 sudo apt install linux-headers-$(uname -r) build-essential
