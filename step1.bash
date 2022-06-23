@@ -66,3 +66,4 @@ sudo sed -i -e "39i dtparam=i2c_baudrate=62500" /boot/firmware/config.txt
 git clone https://github.com/Shogo4402/pimouse_setup.git
 cd pimouse_setup
 sudo crontab crontab.conf
+sudo apt install ros-noetic-rt-usb-9axisimu-driver -y
