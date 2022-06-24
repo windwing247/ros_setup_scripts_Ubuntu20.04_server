@@ -58,12 +58,13 @@ sudo apt install ros-noetic-image-transport-plugins -y
 sudo apt install ros-noetic-web-video-server -y
 cd ~
 git clone https://github.com/rt-net/RaspberryPiMouse.git
+git clone https://github.com/Shogo4402/pimouse_setup.git
 cd RaspberryPiMouse/utils
 sudo apt install linux-headers-$(uname -r) build-essential
 ./build_install.bash
 cd ~
-sudo sed -i -e "39i dtparam=i2c_baudrate=62500" /boot/firmware/config.txt
-git clone https://github.com/Shogo4402/pimouse_setup.git
 cd pimouse_setup
 sudo crontab crontab.conf
+cd ~
+sudo sed -i -e "39i dtparam=i2c_baudrate=62500" /boot/firmware/config.txt
 sudo apt install ros-noetic-rt-usb-9axisimu-driver -y
