@@ -62,9 +62,12 @@ git clone https://github.com/Shogo4402/pimouse_setup.git
 cd RaspberryPiMouse/utils
 sudo apt install linux-headers-$(uname -r) build-essential
 ./build_install.bash
-cd ~
-cd pimouse_setup
+cd ~/pimouse_setup
 sudo crontab crontab.conf
 cd ~
 sudo sed -i -e "39i dtparam=i2c_baudrate=62500" /boot/firmware/config.txt
 sudo apt install ros-noetic-rt-usb-9axisimu-driver -y
+
+cd ~/pimouse_setup
+sudo crontab crontab.conf
+sudo crontab -l
