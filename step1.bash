@@ -71,3 +71,4 @@ sudo apt install ros-noetic-rt-usb-9axisimu-driver -y
 cd ~/pimouse_setup
 sudo crontab crontab.conf
 sudo crontab -l
+source ~/.bashrc
