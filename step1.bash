@@ -50,6 +50,7 @@ echo '* after that, try             *'
 echo '* $ LANG=C roscore            *'
 echo '*******************************'
 
+sudo apt install -y ninja-build
 sudo apt install tree -y
 sudo apt install wireless-tools -y
 sudo apt install ros-noetic-cv-bridge -y
