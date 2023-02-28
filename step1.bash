@@ -59,7 +59,7 @@ sudo apt install ros-noetic-image-transport-plugins -y
 sudo apt install ros-noetic-web-video-server -y
 cd ~
 git clone https://github.com/rt-net/RaspberryPiMouse.git
-git clone https://github.com/Shogo4402/pimouse_setup.git
+git clone https://github.com/windwing247/pimouse_setup.git
 cd RaspberryPiMouse/utils
 sudo apt install linux-headers-$(uname -r) build-essential
 ./build_install.bash
